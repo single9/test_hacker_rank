@@ -1,0 +1,10 @@
+[package]
+name = "hacker_rank"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "compare_the_triplets"
+path = "src/bin/compare_the_triplets.rs"
+
+[dependencies]
