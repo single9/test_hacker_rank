@@ -8,7 +8,6 @@ fn fibonacci(s: i32) -> i32 {
     match s {
         0 => 0,
         1 => 1,
-        2 => 1,
         _ => fibonacci(s - 1) + fibonacci(s - 2),
     }
 }
