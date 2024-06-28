@@ -5,10 +5,11 @@ use std::fs::File;
 use std::io::{self, BufRead, Write};
 
 fn fibonacci(s: i32) -> i32 {
-    if s >= 0 && s <= 2 {
-        1
-    } else {
-        fibonacci(s - 1) + fibonacci(s - 2)
+    match s {
+        0 => 0,
+        1 => 1,
+        2 => 1,
+        _ => fibonacci(s - 1) + fibonacci(s - 2),
     }
 }
 
